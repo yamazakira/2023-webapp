@@ -11,7 +11,7 @@ Localidade: IFRN-CNAT-DIATINF
 Professor: [Leonardo Ataide Minora](https://github.com/leonardo-minora)
 
 ## Autor
-[Leonardo Ataide Minora](https://github.com/leonardo-minora)
+[Akira Vitor de Lima Yamazaki](https://github.com/yamazakira)
 
 ## Log do projeto
 | Data | Descrição |
