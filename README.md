@@ -17,4 +17,5 @@ Professor: [Leonardo Ataide Minora](https://github.com/leonardo-minora)
 | Data | Descrição |
 | --- | --- |
 | 30.03.2023 | Projeto HTML Publicado |
+| 08.05.2023 | Criado webapp com react e vite |
 
