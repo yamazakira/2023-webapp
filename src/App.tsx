@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+// componente REact vazio
+const Componente = () => null;
 
+// componente React
+const Botao = (props: any) => {
+  const titulo = props.titulo ? props.titulo : "Texto padrão";
+  // const estado = useState(2);
+  return (
+    <button onClick={props.onClick}>
+      {titulo}
+    </button>
+  );
+}
+
+const App = () => {
+  const [contador, contar] = useState(10)
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>Meu contador está em {contador}</h1>
       </div>
-      <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <Botao titulo="Aumentar" onClick={() => contar(contador + 1)} />
+        <Botao titulo={"Diminuir"} onClick={() => contar(contador - 1)} />
+        <Botao titulo="Zerar" onClick={() => contar(0)} />
+        <Componente />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
